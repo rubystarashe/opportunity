@@ -1,0 +1,33 @@
+{
+  "name": "rubystarashe.github.io",
+  "version": "1.0.0",
+  "description": "rubystarashe's webdev opportunity with nuxt & electron",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubystarashe/rubystarashe.github.io.git"
+  },
+  "keywords": [
+    "nuxt",
+    "electron",
+    "vue",
+    "graphql",
+    "websocket",
+    "mongodb",
+    "node",
+    "javascript"
+  ],
+  "author": "rubystarashe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rubystarashe/rubystarashe.github.io/issues"
+  },
+  "homepage": "https://github.com/rubystarashe/rubystarashe.github.io#readme",
+  "devDependencies": {
+    "push-dir": "^0.4.1"
+  }
+}
