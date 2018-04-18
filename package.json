@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "nuxt generate",
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "repository": {
@@ -29,5 +30,8 @@
   "homepage": "https://github.com/rubystarashe/rubystarashe.github.io#readme",
   "devDependencies": {
     "push-dir": "^0.4.1"
+  },
+  "dependencies": {
+    "nuxt": "^1.4.0"
   }
 }
