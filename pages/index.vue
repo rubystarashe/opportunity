@@ -39,6 +39,9 @@ export default {
       }
 			self.interm = interm
 		}
+		recognition.onend = () => {
+			recognition.start()
+		}
 	}
 }
 </script>
