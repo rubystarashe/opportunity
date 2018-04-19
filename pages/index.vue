@@ -6,15 +6,12 @@
 </template>
 
 <script>
-import axios from 'axios'
-
 export default {
 	data() {
 		return {
 			recognition: null,
       interm: '',
-			transcript: [],
-			translated: []
+			transcript: []
 		}
 	},
 	mounted() {
@@ -36,10 +33,6 @@ export default {
       for (var i = event.resultIndex; i < event.results.length; ++i) {
         if (event.results[i].isFinal) {
           self.transcript.push(event.results[i][0].transcript)
-					axios.post('https://openapi.naver.com/v1/papago/n2mt', {
-						form: {'source':'ko', 'target':'en', 'text':event.results[i][0].transcript},
-       			headers: {'X-Naver-Client-Id':'x0Od2v52U4vdLZDevuKq', 'X-Naver-Client-Secret': 'ZI28UTCJY3'}
-					}).then(r => console.log(r))
         } else {
           interm += event.results[i][0].transcript
         }
